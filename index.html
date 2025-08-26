@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN&MELAO - Panadería Artesanal Venezolana</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                   <img src="logo.png" alt="Pan & melao" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Bienvenidos a PAN&MELAO</h1>
+            <p class="hero-subtitle">Panadería Artesanal Venezolana</p>
+            <p class="hero-description">Descubre el arte de la panadería tradicional venezolana con nuestros productos artesanales y cursos especializados</p>
+            <div class="hero-buttons">
+                <a href="#productos" class="cta-button primary">Ver Productos</a>
+                <a href="#cursos" class="cta-button secondary">Explorar Cursos</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-bakery-items">
+                <div class="bakery-item bread-item"></div>
+                <div class="bakery-item pastry-item"></div>
+                <div class="bakery-item cake-item"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos Artesanales</h2>
+            <p class="section-subtitle">Elaborados con ingredientes frescos y técnicas tradicionales venezolanas</p>
+            
+            <div class="product-categories">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="panes">Panes</button>
+                    <button class="tab-btn" data-category="dulces">Dulces</button>
+                    <button class="tab-btn" data-category="pasteles">Pasteles</button>
+                    <button class="tab-btn" data-category="especiales">Especiales</button>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Panes -->
+                    <div class="product-card" data-category="panes">
+                        <div class="product-image bread-img"></div>
+                        <div class="product-info">
+                            <h3>Pan de Jamón</h3>
+                            <p>Pan dulce relleno de jamón, aceitunas y pasas</p>
+                            <span class="price">$8.50</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="panes">
+                        <div class="product-image bread-img"></div>
+                        <div class="product-info">
+                            <h3>Pan Canilla</h3>
+                            <p>Pan blanco suave y esponjoso</p>
+                            <span class="price">$2.00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="panes">
+                        <div class="product-image bread-img"></div>
+                        <div class="product-info">
+                            <h3>Pan de Queso</h3>
+                            <p>Pan artesanal con queso fresco</p>
+                            <span class="price">$3.50</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Dulces -->
+                    <div class="product-card" data-category="dulces">
+                        <div class="product-image pastry-img"></div>
+                        <div class="product-info">
+                            <h3>Alfajores</h3>
+                            <p>Galletas rellenas de dulce de leche</p>
+                            <span class="price">$4.00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="dulces">
+                        <div class="product-image pastry-img"></div>
+                        <div class="product-info">
+                            <h3>Quesillo</h3>
+                            <p>Flan venezolano tradicional</p>
+                            <span class="price">$6.50</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="dulces">
+                        <div class="product-image pastry-img"></div>
+                        <div class="product-info">
+                            <h3>Bienmesabe</h3>
+                            <p>Dulce de coco con canela</p>
+                            <span class="price">$5.00</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Pasteles -->
+                    <div class="product-card" data-category="pasteles">
+                        <div class="product-image cake-img"></div>
+                        <div class="product-info">
+                            <h3>Tres Leches</h3>
+                            <p>Pastel bañado en tres tipos de leche</p>
+                            <span class="price">$12.00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="pasteles">
+                        <div class="product-image cake-img"></div>
+                        <div class="product-info">
+                            <h3>Pastel de Chocolate</h3>
+                            <p>Chocolate venezolano premium</p>
+                            <span class="price">$15.00</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Especiales -->
+                    <div class="product-card" data-category="especiales">
+                        <div class="product-image special-img"></div>
+                        <div class="product-info">
+                            <h3>Hallacas</h3>
+                            <p>Plato navideño venezolano</p>
+                            <span class="price">$18.00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="especiales">
+                        <div class="product-image special-img"></div>
+                        <div class="product-info">
+                            <h3>Pabellón Criollo</h3>
+                            <p>Plato nacional venezolano</p>
+                            <span class="price">$22.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="cursos" class="courses">
+        <div class="container">
+            <h2 class="section-title">Cursos de Panadería Artesanal</h2>
+            <p class="section-subtitle">Aprende las técnicas tradicionales venezolanas de la mano de expertos</p>
+            
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <h3>Fundamentos de Panadería</h3>
+                    <p>Aprende las técnicas básicas de amasado, fermentación y horneado</p>
+                    <ul class="course-features">
+                        <li>4 sesiones de 3 horas</li>
+                        <li>Materiales incluidos</li>
+                        <li>Certificado al finalizar</li>
+                        <li>Máximo 8 estudiantes</li>
+                    </ul>
+                    <span class="course-price">$180</span>
+                    <a href="#contacto" class="course-btn">Inscribirse</a>
+                </div>
+                
+                <div class="course-card featured">
+                    <div class="course-badge">Más Popular</div>
+                    <div class="course-icon">
+                        <i class="fas fa-cake-birthday"></i>
+                    </div>
+                    <h3>Pastelería Venezolana</h3>
+                    <p>Domina la elaboración de dulces y pasteles tradicionales</p>
+                    <ul class="course-features">
+                        <li>6 sesiones de 3 horas</li>
+                        <li>Ingredientes premium</li>
+                       li>Recetario completo</li>
+                        <li>Máximo 6 estudiantes</li>
+                    </ul>
+                    <span class="course-price">$280</span>
+                    <a href="#contacto" class="course-btn">Inscribirse</a>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Panadería Avanzada</h3>
+                    <p>Técnicas avanzadas para panaderos experimentados</p>
+                    <ul class="course-features">
+                        <li>8 sesiones de 4 horas</li>
+                        <li>Prácticas intensivas</li>
+                        <li>Proyecto final</li>
+                        <li>Máximo 4 estudiantes</li>
+                    </ul>
+                    <span class="course-price">$420</span>
+                    <a href="#contacto" class="course-btn">Inscribirse</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Nuestra Historia</h2>
+                    <p>PAN&MELAO nació del amor por la panadería artesanal venezolana y la pasión por compartir estos sabores tradicionales con el mundo. Nuestro nombre combina "PAN" (pan) y "MELAO" (miel), representando la dulzura y el arte de la panadería.</p>
+                    <p>Desde 2018, hemos estado elaborando productos artesanales siguiendo recetas familiares transmitidas de generación en generación, utilizando ingredientes frescos y técnicas tradicionales que garantizan la autenticidad de cada bocado.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Clientes Satisfechos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Estudiantes Graduados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Recetas Tradicionales</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-bakery-scene">
+                        <div class="baker-figure"></div>
+                        <div class="oven"></div>
+                        <div class="ingredients"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">¿Tienes preguntas sobre nuestros productos o cursos? ¡Escríbenos!</p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="tipo" name="tipo" required>
+                                <option value="">Selecciona el tipo de consulta</option>
+                                <option value="productos">Productos</option>
+                                <option value="cursos">Cursos</option>
+                                <option value="eventos">Eventos</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Ubicación</h3>
+                        <p>123 Calle de la Panadería</p>
+                        <p>Caracas, Venezuela</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Horarios</h3>
+                        <p>Lunes - Sábado</p>
+                        <p>7:00 AM - 8:00 PM</p>
+                        <p>Domingo: 8:00 AM - 6:00 PM</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Teléfono</h3>
+                        <p>+58 212 555 0123</p>
+                        <p>+58 414 555 0123</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>info@panymelao.com</p>
+                        <p>cursos@panymelao.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-logo-circle">
+                        <span class="footer-brand">PAN&MELAO</span>
+                        <span class="footer-tagline">Sweets & Pastries</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PAN&MELAO - Panadería Artesanal Venezolana. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
